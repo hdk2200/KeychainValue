@@ -32,7 +32,8 @@
 --enable todos
 --enable trailingClosures
 
---disable elseOnSameLine
+# --enable elseOnSameLine
+# --disable elseOnSameLine 
 --disable spaceInsideParens
 --disable blankLinesAroundMark
 --disable andOperator
