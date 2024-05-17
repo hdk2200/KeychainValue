@@ -1,0 +1,41 @@
+# nicklockwood/SwiftFormat: A command-line tool and Xcode Extension for formatting Swift code https://github.com/nicklockwood/SwiftFormat/tree/main#config-file
+# - create .swiftformat template
+# 
+#  swift run --package-path BuildTools swiftformat  --inferoptions . --output .swiftformat
+# 
+#  - Rule 
+#  https://github.com/nicklockwood/SwiftFormat/blob/main/Rules.md
+
+--swiftversion 5.8.1
+
+--indent 2 
+--ifdef indent
+--nospaceoperators
+--stripunusedargs closure-only
+
+--exclude Pods
+--exclude Carthage
+--exclude BuildTools
+--exclude enerated
+--exclude erivedData
+--exclude **/*generated.swift
+
+
+--enable isEmpty
+--enable redundantBreak
+--enable redundantExtensionACL
+--enable redundantFileprivate
+--enable redundantGet
+--enable redundantObjc
+--enable redundantParens
+--enable strongifiedSelf
+--enable todos
+--enable trailingClosures
+
+--disable elseOnSameLine
+--disable spaceInsideParens
+--disable blankLinesAroundMark
+--disable andOperator
+--disable strongOutlets
+--disable trailingCommas 
+--disable redundantLet
