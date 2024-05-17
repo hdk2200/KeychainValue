@@ -13,7 +13,18 @@
 		20E0D3462BF6CF3D00D76D9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0D3452BF6CF3D00D76D9B /* Preview Assets.xcassets */; };
 		20E0D34E2BF6D48000D76D9B /* KeychainValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */; };
 		20E0D34F2BF6D48000D76D9B /* KeychainValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */; };
+		20E0D3572BF6D77800D76D9B /* KeychainExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D3562BF6D77800D76D9B /* KeychainExampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20E0D3582BF6D77800D76D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E0D3332BF6CF3C00D76D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E0D33A2BF6CF3C00D76D9B;
+			remoteInfo = KeychainExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		20E0D33B2BF6CF3C00D76D9B /* KeychainExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +34,19 @@
 		20E0D3452BF6CF3D00D76D9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainValueProtocol.swift; sourceTree = "<group>"; };
 		20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainValue.swift; sourceTree = "<group>"; };
+		20E0D3542BF6D77800D76D9B /* KeychainExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E0D3562BF6D77800D76D9B /* KeychainExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		20E0D3382BF6CF3C00D76D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E0D3512BF6D77800D76D9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				20E0D33D2BF6CF3C00D76D9B /* KeychainExample */,
+				20E0D3552BF6D77800D76D9B /* KeychainExampleTests */,
 				20E0D33C2BF6CF3C00D76D9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				20E0D33B2BF6CF3C00D76D9B /* KeychainExample.app */,
+				20E0D3542BF6D77800D76D9B /* KeychainExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +95,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		20E0D3552BF6D77800D76D9B /* KeychainExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				20E0D3562BF6D77800D76D9B /* KeychainExampleTests.swift */,
+			);
+			path = KeychainExampleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +123,24 @@
 			productReference = 20E0D33B2BF6CF3C00D76D9B /* KeychainExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		20E0D3532BF6D77800D76D9B /* KeychainExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E0D35A2BF6D77800D76D9B /* Build configuration list for PBXNativeTarget "KeychainExampleTests" */;
+			buildPhases = (
+				20E0D3502BF6D77800D76D9B /* Sources */,
+				20E0D3512BF6D77800D76D9B /* Frameworks */,
+				20E0D3522BF6D77800D76D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E0D3592BF6D77800D76D9B /* PBXTargetDependency */,
+			);
+			name = KeychainExampleTests;
+			productName = KeychainExampleTests;
+			productReference = 20E0D3542BF6D77800D76D9B /* KeychainExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +153,10 @@
 				TargetAttributes = {
 					20E0D33A2BF6CF3C00D76D9B = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					20E0D3532BF6D77800D76D9B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 20E0D33A2BF6CF3C00D76D9B;
 					};
 				};
 			};
@@ -122,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				20E0D33A2BF6CF3C00D76D9B /* KeychainExample */,
+				20E0D3532BF6D77800D76D9B /* KeychainExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +186,13 @@
 			files = (
 				20E0D3462BF6CF3D00D76D9B /* Preview Assets.xcassets in Resources */,
 				20E0D3432BF6CF3D00D76D9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E0D3522BF6D77800D76D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20E0D3502BF6D77800D76D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E0D3572BF6D77800D76D9B /* KeychainExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20E0D3592BF6D77800D76D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E0D33A2BF6CF3C00D76D9B /* KeychainExample */;
+			targetProxy = 20E0D3582BF6D77800D76D9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		20E0D3472BF6CF3D00D76D9B /* Debug */ = {
@@ -205,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -262,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -330,6 +406,42 @@
 			};
 			name = Release;
 		};
+		20E0D35B2BF6D77800D76D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainExample";
+			};
+			name = Debug;
+		};
+		20E0D35C2BF6D77800D76D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +459,15 @@
 			buildConfigurations = (
 				20E0D34A2BF6CF3D00D76D9B /* Debug */,
 				20E0D34B2BF6CF3D00D76D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E0D35A2BF6D77800D76D9B /* Build configuration list for PBXNativeTarget "KeychainExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E0D35B2BF6D77800D76D9B /* Debug */,
+				20E0D35C2BF6D77800D76D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
