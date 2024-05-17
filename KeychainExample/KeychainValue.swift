@@ -8,16 +8,16 @@ enum KeychainValueError: Error {
 
 public class KeychainValue: KeychainValueProtocol {
   private let service: String
-    
+
   public init(service: String = Bundle.main.bundleIdentifier ?? "defaultService") {
     self.service = service
   }
-    
+
   private static func makeUnexpectedError(status: OSStatus) -> KeychainValueError {
     let desc = SecCopyErrorMessageString(status, nil) as String? ?? "Unknown keychain error"
     return .unexpectedError(status: status, description: desc)
   }
-    
+
   public func get(_ key: String) throws -> String? {
     let query: [String: Any] = [
       kSecClass as String: kSecClassGenericPassword,
@@ -26,10 +26,10 @@ public class KeychainValue: KeychainValueProtocol {
       kSecMatchLimit as String: kSecMatchLimitOne,
       kSecReturnData as String: kCFBooleanTrue!
     ]
-        
+
     var result: AnyObject?
     let status = SecItemCopyMatching(query as CFDictionary, &result)
-        
+
     guard status == errSecSuccess else {
       if status == errSecItemNotFound {
         return nil
@@ -37,27 +37,27 @@ public class KeychainValue: KeychainValueProtocol {
         throw KeychainValue.makeUnexpectedError(status: status)
       }
     }
-        
+
     guard let data = result as? Data else {
       throw KeychainValueError.dataConvert
     }
-        
+
     return String(data: data, encoding: .utf8)
   }
-    
+
   public func set(_ key: String, value: String) throws {
     guard let data = value.data(using: .utf8) else {
       throw KeychainValueError.dataConvert
     }
-        
+
     var query: [String: Any] = [
       kSecClass as String: kSecClassGenericPassword,
       kSecAttrService as String: service,
       kSecAttrAccount as String: key
     ]
-        
+
     let status = SecItemCopyMatching(query as CFDictionary, nil)
-        
+
     if status == errSecItemNotFound {
       // Add new item
       query[kSecValueData as String] = data
@@ -76,26 +76,26 @@ public class KeychainValue: KeychainValueProtocol {
       throw KeychainValue.makeUnexpectedError(status: status)
     }
   }
-    
+
   public func remove(_ key: String) throws {
     let query: [String: Any] = [
       kSecClass as String: kSecClassGenericPassword,
       kSecAttrService as String: service,
       kSecAttrAccount as String: key
     ]
-        
+
     let status = SecItemDelete(query as CFDictionary)
     guard status == errSecSuccess || status == errSecItemNotFound else {
       throw KeychainValue.makeUnexpectedError(status: status)
     }
   }
-    
+
   public func removeAll() throws {
     let query: [String: Any] = [
       kSecClass as String: kSecClassGenericPassword,
       kSecAttrService as String: service
     ]
-        
+
     let status = SecItemDelete(query as CFDictionary)
     guard status == errSecSuccess || status == errSecItemNotFound else {
       throw KeychainValue.makeUnexpectedError(status: status)
