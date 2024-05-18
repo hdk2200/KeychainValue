@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct KeychainExampleApp: App {
+struct KeychainValueApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()

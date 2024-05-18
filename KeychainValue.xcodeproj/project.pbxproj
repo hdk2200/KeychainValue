@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20E0D33F2BF6CF3C00D76D9B /* KeychainExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D33E2BF6CF3C00D76D9B /* KeychainExampleApp.swift */; };
+		20E0D33F2BF6CF3C00D76D9B /* KeychainValueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */; };
 		20E0D3412BF6CF3C00D76D9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D3402BF6CF3C00D76D9B /* ContentView.swift */; };
 		20E0D3432BF6CF3D00D76D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0D3422BF6CF3D00D76D9B /* Assets.xcassets */; };
 		20E0D3462BF6CF3D00D76D9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0D3452BF6CF3D00D76D9B /* Preview Assets.xcassets */; };
 		20E0D34E2BF6D48000D76D9B /* KeychainValueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */; };
 		20E0D34F2BF6D48000D76D9B /* KeychainValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */; };
-		20E0D3572BF6D77800D76D9B /* KeychainExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D3562BF6D77800D76D9B /* KeychainExampleTests.swift */; };
+		20E0D3572BF6D77800D76D9B /* KeychainValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D3562BF6D77800D76D9B /* KeychainValueTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +27,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20E0D33B2BF6CF3C00D76D9B /* KeychainExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		20E0D33E2BF6CF3C00D76D9B /* KeychainExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExampleApp.swift; sourceTree = "<group>"; };
+		20E0D33B2BF6CF3C00D76D9B /* KeychainValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainValueApp.swift; sourceTree = "<group>"; };
 		20E0D3402BF6CF3C00D76D9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20E0D3422BF6CF3D00D76D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E0D3452BF6CF3D00D76D9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainValueProtocol.swift; sourceTree = "<group>"; };
 		20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainValue.swift; sourceTree = "<group>"; };
-		20E0D3542BF6D77800D76D9B /* KeychainExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20E0D3562BF6D77800D76D9B /* KeychainExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainExampleTests.swift; sourceTree = "<group>"; };
+		20E0D3542BF6D77800D76D9B /* KeychainValueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainValueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E0D3562BF6D77800D76D9B /* KeychainValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainValueTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 		20E0D3322BF6CF3C00D76D9B = {
 			isa = PBXGroup;
 			children = (
-				20E0D33D2BF6CF3C00D76D9B /* KeychainExample */,
-				20E0D3552BF6D77800D76D9B /* KeychainExampleTests */,
+				20E0D33D2BF6CF3C00D76D9B /* KeychainValue */,
+				20E0D3552BF6D77800D76D9B /* KeychainValueTests */,
 				20E0D33C2BF6CF3C00D76D9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,23 +68,23 @@
 		20E0D33C2BF6CF3C00D76D9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20E0D33B2BF6CF3C00D76D9B /* KeychainExample.app */,
-				20E0D3542BF6D77800D76D9B /* KeychainExampleTests.xctest */,
+				20E0D33B2BF6CF3C00D76D9B /* KeychainValue.app */,
+				20E0D3542BF6D77800D76D9B /* KeychainValueTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20E0D33D2BF6CF3C00D76D9B /* KeychainExample */ = {
+		20E0D33D2BF6CF3C00D76D9B /* KeychainValue */ = {
 			isa = PBXGroup;
 			children = (
 				20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */,
 				20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */,
-				20E0D33E2BF6CF3C00D76D9B /* KeychainExampleApp.swift */,
+				20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */,
 				20E0D3402BF6CF3C00D76D9B /* ContentView.swift */,
 				20E0D3422BF6CF3D00D76D9B /* Assets.xcassets */,
 				20E0D3442BF6CF3D00D76D9B /* Preview Content */,
 			);
-			path = KeychainExample;
+			path = KeychainValue;
 			sourceTree = "<group>";
 		};
 		20E0D3442BF6CF3D00D76D9B /* Preview Content */ = {
@@ -95,20 +95,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		20E0D3552BF6D77800D76D9B /* KeychainExampleTests */ = {
+		20E0D3552BF6D77800D76D9B /* KeychainValueTests */ = {
 			isa = PBXGroup;
 			children = (
-				20E0D3562BF6D77800D76D9B /* KeychainExampleTests.swift */,
+				20E0D3562BF6D77800D76D9B /* KeychainValueTests.swift */,
 			);
-			path = KeychainExampleTests;
+			path = KeychainValueTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20E0D33A2BF6CF3C00D76D9B /* KeychainExample */ = {
+		20E0D33A2BF6CF3C00D76D9B /* KeychainValue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20E0D3492BF6CF3D00D76D9B /* Build configuration list for PBXNativeTarget "KeychainExample" */;
+			buildConfigurationList = 20E0D3492BF6CF3D00D76D9B /* Build configuration list for PBXNativeTarget "KeychainValue" */;
 			buildPhases = (
 				20E0D3372BF6CF3C00D76D9B /* Sources */,
 				20E0D3382BF6CF3C00D76D9B /* Frameworks */,
@@ -118,14 +118,14 @@
 			);
 			dependencies = (
 			);
-			name = KeychainExample;
+			name = KeychainValue;
 			productName = KeychainExample;
-			productReference = 20E0D33B2BF6CF3C00D76D9B /* KeychainExample.app */;
+			productReference = 20E0D33B2BF6CF3C00D76D9B /* KeychainValue.app */;
 			productType = "com.apple.product-type.application";
 		};
-		20E0D3532BF6D77800D76D9B /* KeychainExampleTests */ = {
+		20E0D3532BF6D77800D76D9B /* KeychainValueTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20E0D35A2BF6D77800D76D9B /* Build configuration list for PBXNativeTarget "KeychainExampleTests" */;
+			buildConfigurationList = 20E0D35A2BF6D77800D76D9B /* Build configuration list for PBXNativeTarget "KeychainValueTests" */;
 			buildPhases = (
 				20E0D3502BF6D77800D76D9B /* Sources */,
 				20E0D3512BF6D77800D76D9B /* Frameworks */,
@@ -136,9 +136,9 @@
 			dependencies = (
 				20E0D3592BF6D77800D76D9B /* PBXTargetDependency */,
 			);
-			name = KeychainExampleTests;
+			name = KeychainValueTests;
 			productName = KeychainExampleTests;
-			productReference = 20E0D3542BF6D77800D76D9B /* KeychainExampleTests.xctest */;
+			productReference = 20E0D3542BF6D77800D76D9B /* KeychainValueTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20E0D3362BF6CF3C00D76D9B /* Build configuration list for PBXProject "KeychainExample" */;
+			buildConfigurationList = 20E0D3362BF6CF3C00D76D9B /* Build configuration list for PBXProject "KeychainValue" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,8 +173,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20E0D33A2BF6CF3C00D76D9B /* KeychainExample */,
-				20E0D3532BF6D77800D76D9B /* KeychainExampleTests */,
+				20E0D33A2BF6CF3C00D76D9B /* KeychainValue */,
+				20E0D3532BF6D77800D76D9B /* KeychainValueTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0D3412BF6CF3C00D76D9B /* ContentView.swift in Sources */,
-				20E0D33F2BF6CF3C00D76D9B /* KeychainExampleApp.swift in Sources */,
+				20E0D33F2BF6CF3C00D76D9B /* KeychainValueApp.swift in Sources */,
 				20E0D34E2BF6D48000D76D9B /* KeychainValueProtocol.swift in Sources */,
 				20E0D34F2BF6D48000D76D9B /* KeychainValue.swift in Sources */,
 			);
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20E0D3572BF6D77800D76D9B /* KeychainExampleTests.swift in Sources */,
+				20E0D3572BF6D77800D76D9B /* KeychainValueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +223,7 @@
 /* Begin PBXTargetDependency section */
 		20E0D3592BF6D77800D76D9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 20E0D33A2BF6CF3C00D76D9B /* KeychainExample */;
+			target = 20E0D33A2BF6CF3C00D76D9B /* KeychainValue */;
 			targetProxy = 20E0D3582BF6D77800D76D9B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -355,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KeychainExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KeychainValue/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -384,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KeychainExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KeychainValue/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -420,7 +420,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainValue.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainValue";
 			};
 			name = Debug;
 		};
@@ -438,14 +438,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeychainValue.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeychainValue";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20E0D3362BF6CF3C00D76D9B /* Build configuration list for PBXProject "KeychainExample" */ = {
+		20E0D3362BF6CF3C00D76D9B /* Build configuration list for PBXProject "KeychainValue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20E0D3472BF6CF3D00D76D9B /* Debug */,
@@ -454,7 +454,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20E0D3492BF6CF3D00D76D9B /* Build configuration list for PBXNativeTarget "KeychainExample" */ = {
+		20E0D3492BF6CF3D00D76D9B /* Build configuration list for PBXNativeTarget "KeychainValue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20E0D34A2BF6CF3D00D76D9B /* Debug */,
@@ -463,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20E0D35A2BF6D77800D76D9B /* Build configuration list for PBXNativeTarget "KeychainExampleTests" */ = {
+		20E0D35A2BF6D77800D76D9B /* Build configuration list for PBXNativeTarget "KeychainValueTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20E0D35B2BF6D77800D76D9B /* Debug */,

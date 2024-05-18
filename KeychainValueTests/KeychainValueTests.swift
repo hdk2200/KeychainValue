@@ -1,7 +1,7 @@
-@testable import KeychainExample
+@testable import KeychainValue
 import XCTest
 
-final class KeychainExampleTests: XCTestCase {
+final class KeychainValueTests: XCTestCase {
   var keychain: KeychainValue!
 
   let serviceName = "testServic"
