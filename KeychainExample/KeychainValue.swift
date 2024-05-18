@@ -38,11 +38,13 @@ public class KeychainValue: KeychainValueProtocol {
       }
     }
 
-    guard let data = result as? Data else {
+    guard let data = result as? Data,
+          let value = String(data: data, encoding: .utf8)
+    else {
       throw KeychainValueError.dataConvert
     }
 
-    return String(data: data, encoding: .utf8)
+    return value
   }
 
   public func set(_ key: String, value: String) throws {

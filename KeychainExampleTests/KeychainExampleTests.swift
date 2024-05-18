@@ -4,8 +4,9 @@ import XCTest
 final class KeychainExampleTests: XCTestCase {
   var keychain: KeychainValue!
 
+  let serviceName = "testServic"
   override func setUpWithError() throws {
-    keychain = KeychainValue(service: "testService")
+    keychain = KeychainValue(service: serviceName)
     try keychain.removeAll()
   }
 
@@ -62,6 +63,32 @@ final class KeychainExampleTests: XCTestCase {
     for keyid in 0...10 {
       let val = try keychain.get("myKey\(keyid)")
       XCTAssertNil(val)
+    }
+  }
+
+  func testGetWithNonStringData() {
+    let key = "testKey"
+    let intValue = 999
+
+    let data = withUnsafeBytes(of: intValue) { Data($0) }
+    let query: [String: Any] = [
+      kSecClass as String: kSecClassGenericPassword,
+      kSecAttrService as String: serviceName,
+      kSecAttrAccount as String: key,
+      kSecValueData as String: data
+    ]
+
+    let status = SecItemAdd(query as CFDictionary, nil)
+    guard status == errSecSuccess else {
+      XCTFail("\(status)")
+      return
+    }
+
+    XCTAssertThrowsError(try keychain.get(key)) { error in
+      guard case KeychainValueError.dataConvert = error else {
+        XCTFail("\(error)")
+        return
+      }
     }
   }
 }
