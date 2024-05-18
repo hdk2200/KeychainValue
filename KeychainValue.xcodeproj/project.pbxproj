@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206B387A2BF886D7004BC8E9 /* developer.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 206B38792BF886D7004BC8E9 /* developer.xcconfig */; };
 		20E0D33F2BF6CF3C00D76D9B /* KeychainValueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */; };
 		20E0D3412BF6CF3C00D76D9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0D3402BF6CF3C00D76D9B /* ContentView.swift */; };
 		20E0D3432BF6CF3D00D76D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0D3422BF6CF3D00D76D9B /* Assets.xcassets */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201FEB522BF87FB20043F709 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
+		201FEB532BF880030043F709 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
+		206B38792BF886D7004BC8E9 /* developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = developer.xcconfig; sourceTree = "<group>"; };
 		20E0D33B2BF6CF3C00D76D9B /* KeychainValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainValueApp.swift; sourceTree = "<group>"; };
 		20E0D3402BF6CF3C00D76D9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,11 +81,13 @@
 		20E0D33D2BF6CF3C00D76D9B /* KeychainValue */ = {
 			isa = PBXGroup;
 			children = (
-				20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */,
-				20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */,
-				20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */,
 				20E0D3402BF6CF3C00D76D9B /* ContentView.swift */,
+				20E0D34D2BF6D48000D76D9B /* KeychainValue.swift */,
+				20E0D33E2BF6CF3C00D76D9B /* KeychainValueApp.swift */,
+				20E0D34C2BF6D48000D76D9B /* KeychainValueProtocol.swift */,
 				20E0D3422BF6CF3D00D76D9B /* Assets.xcassets */,
+				206B38792BF886D7004BC8E9 /* developer.xcconfig */,
+				201FEB522BF87FB20043F709 /* project.xcconfig */,
 				20E0D3442BF6CF3D00D76D9B /* Preview Content */,
 			);
 			path = KeychainValue;
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				20E0D3562BF6D77800D76D9B /* KeychainValueTests.swift */,
+				201FEB532BF880030043F709 /* project.xcconfig */,
 			);
 			path = KeychainValueTests;
 			sourceTree = "<group>";
@@ -185,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0D3462BF6CF3D00D76D9B /* Preview Assets.xcassets in Resources */,
+				206B387A2BF886D7004BC8E9 /* developer.xcconfig in Resources */,
 				20E0D3432BF6CF3D00D76D9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,13 +358,12 @@
 		};
 		20E0D34A2BF6CF3D00D76D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201FEB522BF87FB20043F709 /* project.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEVELOPMENT_ASSET_PATHS = "\"KeychainValue/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -371,6 +378,7 @@
 				MARKETING_VERSION = 1.0;
 				
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,13 +387,12 @@
 		};
 		20E0D34B2BF6CF3D00D76D9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201FEB522BF87FB20043F709 /* project.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				DEVELOPMENT_ASSET_PATHS = "\"KeychainValue/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -400,6 +407,7 @@
 				MARKETING_VERSION = 1.0;
 				
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,15 +416,13 @@
 		};
 		20E0D35B2BF6D77800D76D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201FEB532BF880030043F709 /* project.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,15 +432,13 @@
 		};
 		20E0D35C2BF6D77800D76D9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201FEB532BF880030043F709 /* project.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

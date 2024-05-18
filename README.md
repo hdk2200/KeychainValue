@@ -52,3 +52,12 @@ do {
 } catch {
     print("Error removing all values from keychain: \(error)")
 }
+```
+
+
+# Notes
+To test this SwiftPackage, a Test Host is required.
+When testing with standard Swift tests, an OSStatus error -34018 occurs, indicating that the client has neither application-identifier nor keychain-access-groups entitlements.
+Reference URL:
+Test Swift Packages with a Test Host | by Ben Weidig | Medium
+https://medium.com/@benweidig/test-swift-packages-with-a-test-host-235b9b177b9b
